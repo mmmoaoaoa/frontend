@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Форма заявки на покупку комнатных растений в магазине Листок: выбор товара, даты и способа доставки.">
+  <title>Оформление заявки — Листок</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="page-header">
+    <div class="wrapper page-header__inner">
+      <a class="page-header__logo" href="index.html">Листок</a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="care.html">Уход</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="order.html" aria-current="page">Заявка</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="page-header__phone" href="tel:+78120000000">+7 (812) 000-00-00</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper page-intro">
+      <nav class="crumbs" aria-label="Хлебные крошки">
+        <a class="crumbs__link" href="index.html">Главная</a>
+        <span class="crumbs__separator" aria-hidden="true">→</span>
+        <span class="crumbs__current" aria-current="page">Заявка</span>
+      </nav>
+      <h1 class="page-intro__title">Оформление заявки</h1>
+      <p class="page-intro__text">Оставьте заявку — менеджер перезвонит, уточнит детали и согласует доставку. Обязательные поля отмечены звёздочкой.</p>
+    </div>
+
+    <div class="wrapper order">
+      <section class="order__form" aria-labelledby="order-form-title">
+        <h2 class="visually-hidden" id="order-form-title">Форма заявки</h2>
+        <form class="order-form" action="#" method="post">
+          <div class="order-form__field">
+            <label class="order-form__label" for="client-name">Имя <abbr class="order-form__mark" title="обязательное поле">*</abbr></label>
+            <input class="order-form__input" id="client-name" name="name" type="text" minlength="2" autocomplete="name" placeholder="Иван Иванов" required>
+          </div>
+
+          <div class="order-form__field">
+            <label class="order-form__label" for="client-email">E-mail <abbr class="order-form__mark" title="обязательное поле">*</abbr></label>
+            <input class="order-form__input" id="client-email" name="email" type="email" autocomplete="email" placeholder="ivan@example.ru" required>
+          </div>
+
+          <div class="order-form__field">
+            <label class="order-form__label" for="client-phone">Телефон <abbr class="order-form__mark" title="обязательное поле">*</abbr></label>
+            <input class="order-form__input" id="client-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 900 000-00-00" required>
+          </div>
+
+          <div class="order-form__field">
+            <label class="order-form__label" for="client-item">Товар <abbr class="order-form__mark" title="обязательное поле">*</abbr></label>
+            <select class="order-form__input" id="client-item" name="item" required>
+              <option value="">Не выбран</option>
+              <option value="monstera">Монстера деликатесная — 2 490 ₽</option>
+              <option value="ficus">Фикус лирата — 3 200 ₽</option>
+              <option value="sansevieria">Сансевиерия — 1 350 ₽</option>
+              <option value="pot">Кашпо керамическое — 890 ₽</option>
+              <option value="soil">Грунт универсальный — 390 ₽</option>
+            </select>
+          </div>
+
+          <div class="order-form__field order-form__field--half">
+            <label class="order-form__label" for="client-count">Количество</label>
+            <input class="order-form__input" id="client-count" name="count" type="number" min="1" max="10" value="1">
+          </div>
+
+          <div class="order-form__field order-form__field--half">
+            <label class="order-form__label" for="client-date">Желаемая дата доставки</label>
+            <input class="order-form__input" id="client-date" name="date" type="date">
+          </div>
+
+          <fieldset class="order-form__field order-form__choice">
+            <legend class="order-form__label">Способ получения</legend>
+            <label class="order-form__option" for="delivery-courier">
+              <input class="order-form__check" id="delivery-courier" name="delivery" type="radio" value="courier" checked>
+              Курьер
+            </label>
+            <label class="order-form__option" for="delivery-pickup">
+              <input class="order-form__check" id="delivery-pickup" name="delivery" type="radio" value="pickup">
+              Самовывоз из оранжереи
+            </label>
+          </fieldset>
+
+          <div class="order-form__field">
+            <label class="order-form__label" for="client-comment">Комментарий</label>
+            <textarea class="order-form__input order-form__input--area" id="client-comment" name="comment" rows="4" placeholder="Адрес доставки, пожелания по упаковке"></textarea>
+          </div>
+
+          <div class="order-form__field">
+            <label class="order-form__option" for="client-wrap">
+              <input class="order-form__check" id="client-wrap" name="wrap" type="checkbox">
+              Подарочная упаковка (+150 ₽)
+            </label>
+            <label class="order-form__option" for="client-agree">
+              <input class="order-form__check" id="client-agree" name="agree" type="checkbox" required>
+              Согласен на обработку персональных данных <abbr class="order-form__mark" title="обязательное поле">*</abbr>
+            </label>
+          </div>
+
+          <div class="order-form__actions">
+            <button class="button" type="submit">Отправить заявку</button>
+            <button class="button button--outline" type="reset">Сбросить</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="order__info">
+        <table class="specs specs--small">
+          <caption class="specs__caption">Доставка</caption>
+          <thead>
+            <tr>
+              <th class="specs__head" scope="col">Способ</th>
+              <th class="specs__head" scope="col">Срок</th>
+              <th class="specs__head" scope="col">Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="specs__name" scope="row">Курьер по городу</th>
+              <td class="specs__value">1–2 дня</td>
+              <td class="specs__value">400 ₽</td>
+            </tr>
+            <tr>
+              <th class="specs__name" scope="row">Курьер, заказ от 5 000 ₽</th>
+              <td class="specs__value">1–2 дня</td>
+              <td class="specs__value">0 ₽</td>
+            </tr>
+            <tr>
+              <th class="specs__name" scope="row">Самовывоз</th>
+              <td class="specs__value">Сегодня</td>
+              <td class="specs__value">0 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="note note--accent">
+          <h2 class="note__title">Гарантия 14 дней</h2>
+          <p class="note__text">Если растение не приживётся, заменим его или вернём деньги. Подробности — на странице <a href="contacts.html">контактов</a>.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="wrapper page-footer__inner">
+      <div class="page-footer__about">
+        <p class="page-footer__logo">Листок</p>
+        <p class="page-footer__text">Учебный проект по дисциплине «Фронтенд и бэкенд разработка», 2026.</p>
+      </div>
+
+      <nav class="page-footer__nav" aria-label="Быстрые ссылки">
+        <ul class="page-footer__list">
+          <li class="page-footer__item"><a class="page-footer__link" href="index.html#categories">Категории</a></li>
+          <li class="page-footer__item"><a class="page-footer__link" href="index.html#benefits">Преимущества</a></li>
+          <li class="page-footer__item"><a class="page-footer__link" href="index.html#popular">Популярные растения</a></li>
+          <li class="page-footer__item"><a class="page-footer__link" href="#top">Наверх</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
