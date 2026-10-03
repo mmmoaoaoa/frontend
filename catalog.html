@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог магазина Листок: комнатные растения, кашпо и грунт с ценами и наличием.">
+  <title>Каталог растений и товаров для ухода — Листок</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="page-header">
+    <div class="wrapper page-header__inner">
+      <a class="page-header__logo" href="index.html">Листок</a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="catalog.html" aria-current="page">Каталог</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="care.html">Уход</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="order.html">Заявка</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="page-header__phone" href="tel:+78120000000">+7 (812) 000-00-00</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper page-intro">
+      <nav class="crumbs" aria-label="Хлебные крошки">
+        <a class="crumbs__link" href="index.html">Главная</a>
+        <span class="crumbs__separator" aria-hidden="true">→</span>
+        <span class="crumbs__current" aria-current="page">Каталог</span>
+      </nav>
+      <h1 class="page-intro__title">Каталог</h1>
+      <p class="page-intro__text">Растения из нашей оранжереи и всё необходимое для пересадки.</p>
+
+      <ul class="anchor-nav" aria-label="Разделы каталога">
+        <li class="anchor-nav__item"><a class="anchor-nav__link" href="#plants">Растения</a></li>
+        <li class="anchor-nav__item"><a class="anchor-nav__link" href="#goods">Кашпо и грунт</a></li>
+        <li class="anchor-nav__item"><a class="anchor-nav__link" href="#filters">Фильтры</a></li>
+      </ul>
+    </div>
+
+    <div class="wrapper catalog">
+      <div class="catalog__content">
+        <section class="catalog__section" id="plants">
+          <h2 class="block__title">Растения</h2>
+          <div class="product-list product-list--wide">
+            <article class="product-card">
+              <span class="tag tag--hit product-card__tag">Хит</span>
+              <img class="product-card__image" src="images/monstera.svg" alt="Монстера деликатесная в терракотовом горшке" width="400" height="300">
+              <div class="product-card__body">
+                <h3 class="product-card__title">Монстера деликатесная</h3>
+                <p class="product-card__description">Крупные резные листья, быстро растёт и прощает ошибки в уходе.</p>
+                <ul class="product-card__features">
+                  <li class="product-card__feature">Полутень</li>
+                  <li class="product-card__feature">Полив раз в неделю</li>
+                </ul>
+                <p class="status status--in">В наличии</p>
+                <div class="product-card__footer">
+                  <p class="product-card__price">2&nbsp;490&nbsp;₽</p>
+                  <a class="button product-card__button" href="product.html">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="tag tag--new product-card__tag">Новинка</span>
+              <img class="product-card__image" src="images/ficus.svg" alt="Фикус лирата в терракотовом горшке" width="400" height="300">
+              <div class="product-card__body">
+                <h3 class="product-card__title">Фикус лирата</h3>
+                <p class="product-card__description">Деревце с большими глянцевыми листьями для светлой комнаты.</p>
+                <ul class="product-card__features">
+                  <li class="product-card__feature">Яркий свет</li>
+                  <li class="product-card__feature">Полив раз в 10 дней</li>
+                </ul>
+                <p class="status status--in">В наличии</p>
+                <div class="product-card__footer">
+                  <p class="product-card__price">3&nbsp;200&nbsp;₽</p>
+                  <a class="button product-card__button" href="product-ficus.html">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card product-card--discount">
+              <span class="tag tag--sale product-card__tag">Скидка</span>
+              <img class="product-card__image" src="images/sansevieria.svg" alt="Сансевиерия в терракотовом горшке" width="400" height="300">
+              <div class="product-card__body">
+                <h3 class="product-card__title">Сансевиерия</h3>
+                <p class="product-card__description">Неприхотливое растение: переносит тень и редкий полив.</p>
+                <ul class="product-card__features">
+                  <li class="product-card__feature">Тень и полутень</li>
+                  <li class="product-card__feature">Полив раз в 3 недели</li>
+                </ul>
+                <p class="status status--in">В наличии</p>
+                <div class="product-card__footer">
+                  <p class="product-card__price">1&nbsp;350&nbsp;₽ <s class="product-card__old-price">1&nbsp;600&nbsp;₽</s></p>
+                  <a class="button product-card__button" href="product-sansevieria.html">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card product-card--sold-out">
+              <img class="product-card__image" src="images/zamioculcas.svg" alt="Замиокулькас в терракотовом горшке" width="400" height="300">
+              <div class="product-card__body">
+                <h3 class="product-card__title">Замиокулькас</h3>
+                <p class="product-card__description">Глянцевые тёмные листья, растёт медленно и почти не требует внимания.</p>
+                <ul class="product-card__features">
+                  <li class="product-card__feature">Полутень</li>
+                  <li class="product-card__feature">Полив раз в 2 недели</li>
+                </ul>
+                <p class="status status--out">Нет в наличии</p>
+                <div class="product-card__footer">
+                  <p class="product-card__price">1&nbsp;900&nbsp;₽</p>
+                  <a class="button product-card__button" href="product-zamioculcas.html">Подробнее</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="catalog__section" id="goods">
+          <h2 class="block__title">Кашпо и грунт</h2>
+          <div class="product-list product-list--wide">
+            <article class="product-card">
+              <img class="product-card__image" src="images/pot.svg" alt="Белое керамическое кашпо с терракотовыми полосами" width="400" height="300">
+              <div class="product-card__body">
+                <h3 class="product-card__title">Кашпо керамическое</h3>
+                <p class="product-card__description">Глазурованная керамика с дренажным отверстием и поддоном.</p>
+                <ul class="product-card__features">
+                  <li class="product-card__feature">Диаметр 17 см</li>
+                  <li class="product-card__feature">С поддоном</li>
+                </ul>
+                <p class="status status--in">В наличии</p>
+                <div class="product-card__footer">
+                  <p class="product-card__price">890&nbsp;₽</p>
+                  <a class="button product-card__button" href="product-pot.html">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="tag tag--new product-card__tag">Новинка</span>
+              <img class="product-card__image" src="images/soil.svg" alt="Упаковка универсального грунта объёмом пять литров" width="400" height="300">
+              <div class="product-card__body">
+                <h3 class="product-card__title">Грунт универсальный</h3>
+                <p class="product-card__description">Лёгкая смесь с перлитом и корой для большинства комнатных растений.</p>
+                <ul class="product-card__features">
+                  <li class="product-card__feature">Объём 5 л</li>
+                  <li class="product-card__feature">pH 5,5–6,5</li>
+                </ul>
+                <p class="status status--in">В наличии</p>
+                <div class="product-card__footer">
+                  <p class="product-card__price">390&nbsp;₽</p>
+                  <a class="button product-card__button" href="product-soil.html">Подробнее</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <aside class="catalog__sidebar filters" id="filters" aria-labelledby="filters-title">
+        <h2 class="filters__title" id="filters-title">Фильтры</h2>
+        <form class="filters__form" action="#" method="get">
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Освещение</legend>
+            <label class="filters__option"><input class="filters__control" type="checkbox" name="light" value="shade"> Тень</label>
+            <label class="filters__option"><input class="filters__control" type="checkbox" name="light" value="partial" checked> Полутень</label>
+            <label class="filters__option"><input class="filters__control" type="checkbox" name="light" value="bright"> Яркий свет</label>
+          </fieldset>
+
+          <fieldset class="filters__group">
+            <legend class="filters__legend">Сложность ухода</legend>
+            <label class="filters__option"><input class="filters__control" type="radio" name="level" value="any" checked> Любая</label>
+            <label class="filters__option"><input class="filters__control" type="radio" name="level" value="low"> Низкая</label>
+            <label class="filters__option"><input class="filters__control" type="radio" name="level" value="medium"> Средняя</label>
+          </fieldset>
+
+          <div class="filters__group">
+            <label class="filters__legend" for="filter-price">Цена до, ₽</label>
+            <input class="filters__input" id="filter-price" name="price" type="number" min="300" max="5000" step="100" value="3500">
+          </div>
+
+          <button class="button button--block" type="submit" disabled>Показать</button>
+          <p class="filters__hint">Блок фильтров статический: подбор товаров появится вместе с JavaScript.</p>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="wrapper page-footer__inner">
+      <div class="page-footer__about">
+        <p class="page-footer__logo">Листок</p>
+        <p class="page-footer__text">Учебный проект по дисциплине «Фронтенд и бэкенд разработка», 2026.</p>
+      </div>
+
+      <nav class="page-footer__nav" aria-label="Быстрые ссылки">
+        <ul class="page-footer__list">
+          <li class="page-footer__item"><a class="page-footer__link" href="index.html#categories">Категории</a></li>
+          <li class="page-footer__item"><a class="page-footer__link" href="index.html#benefits">Преимущества</a></li>
+          <li class="page-footer__item"><a class="page-footer__link" href="index.html#popular">Популярные растения</a></li>
+          <li class="page-footer__item"><a class="page-footer__link" href="#top">Наверх</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
