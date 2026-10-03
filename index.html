@@ -6,6 +6,7 @@
   <meta name="description" content="Листок — интернет-магазин комнатных растений, кашпо и грунта с доставкой.">
   <title>Листок — комнатные растения с доставкой</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body id="top">
   <header class="page-header">
@@ -138,6 +139,38 @@
         </div>
       </div>
     </section>
+
+    <section class="block" id="reviews">
+      <div class="wrapper">
+        <h2 class="block__title">Отзывы покупателей</h2>
+        <div class="reviews">
+          <figure class="review review--featured">
+            <blockquote class="review__text">Монстера приехала в коробке с креплением, ни один лист не помялся. За два месяца выпустила три новых листа.</blockquote>
+            <figcaption class="review__author">Ольга <span class="review__meta">купила монстеру</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote class="review__text">Взял сансевиерию в офис. Поливаю раз в три недели, как написано в памятке, — растёт отлично.</blockquote>
+            <figcaption class="review__author">Сергей <span class="review__meta">купил сансевиерию</span></figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote class="review__text">Фикус сбросил два листа после переезда, написала в магазин — подсказали, что делать. Сейчас всё хорошо.</blockquote>
+            <figcaption class="review__author">Анна <span class="review__meta">купила фикус</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="block block--tinted">
+      <div class="wrapper">
+        <aside class="callout">
+          <div class="callout__content">
+            <h2 class="callout__title">Нет времени выбирать?</h2>
+            <p class="callout__text">Оставьте телефон, и мы подберём растение под освещение вашей комнаты.</p>
+          </div>
+          <a class="button button--light" href="#quick-order">Быстрый заказ</a>
+        </aside>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -152,10 +185,49 @@
           <li class="page-footer__item"><a class="page-footer__link" href="index.html#categories">Категории</a></li>
           <li class="page-footer__item"><a class="page-footer__link" href="index.html#benefits">Преимущества</a></li>
           <li class="page-footer__item"><a class="page-footer__link" href="index.html#popular">Популярные растения</a></li>
-          <li class="page-footer__item"><a class="page-footer__link" href="#top">Наверх</a></li>
+          <li class="page-footer__item"><a class="page-footer__link" href="index.html#reviews">Отзывы</a></li>
+          <li class="page-footer__item"><a class="page-footer__link" href="care.html#faq">Вопросы об уходе</a></li>
+          <li class="page-footer__item"><a class="page-footer__link" href="contacts.html#feedback">Написать нам</a></li>
         </ul>
       </nav>
     </div>
   </footer>
+
+  <a class="up-button" href="#top" aria-label="Наверх">&uarr;</a>
+
+  <div class="modal" id="quick-order" role="dialog" aria-modal="true" aria-labelledby="quick-order-title">
+    <a class="modal__overlay" href="#close" aria-label="Закрыть окно" tabindex="-1"></a>
+    <div class="modal__window">
+      <a class="modal__close" href="#close" aria-label="Закрыть окно">&times;</a>
+      <h2 class="modal__title" id="quick-order-title">Быстрый заказ</h2>
+      <p class="modal__text">Оставьте телефон — перезвоним в течение 15 минут и оформим заказ за вас.</p>
+
+      <form class="order-form order-form--plain" action="#" method="post">
+        <div class="order-form__field">
+          <label class="order-form__label" for="quick-name">Имя <abbr class="order-form__mark" title="обязательное поле">*</abbr></label>
+          <input class="order-form__input" id="quick-name" name="name" type="text" minlength="2" autocomplete="name" required>
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__label" for="quick-phone">Телефон <abbr class="order-form__mark" title="обязательное поле">*</abbr></label>
+          <input class="order-form__input" id="quick-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 900 000-00-00" required>
+        </div>
+
+        <div class="order-form__field">
+          <label class="order-form__option" for="quick-agree">
+            <input class="order-form__check" id="quick-agree" name="agree" type="checkbox" required>
+            Согласен на обработку персональных данных <abbr class="order-form__mark" title="обязательное поле">*</abbr>
+          </label>
+        </div>
+
+        <div class="order-form__actions">
+          <button class="button" type="submit">Жду звонка</button>
+          <a class="button button--outline" href="#close">Отмена</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <p class="toast" role="status" hidden>Заявка принята. Мы скоро свяжемся с вами.</p>
 </body>
 </html>
