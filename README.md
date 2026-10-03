@@ -8,7 +8,7 @@
 
 ## Ссылка на опубликованный проект
 
-GitHub Pages: https://mmmoaoaoa.github.io/kr1-html-css-shop/
+GitHub Pages: (https://mmmoaoaoa.github.io/frontend/)
 
 ## Структура проекта
 
